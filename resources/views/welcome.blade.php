@@ -18,8 +18,8 @@
     <x-welcome-navigation />
     <div class="sm:h-screen grid sm:grid-cols-4 mx-14 mt-0 gap-10">
         <div class="hidden sm:absolute top-20 left-0 right-0 text-center bg-beige text-white  p-4 sm:flex flex-col">
-            <p class="text-4xl">
-                We are getting Married !
+            <p class="text-5xl">
+                We are getting Married
             </p>
             <livewire:countdown />
         </div>
