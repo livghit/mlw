@@ -69,12 +69,27 @@
                             </div>
 
                             <div class="col-span-6 sm:col-span-3">
-                                <label for="number_ppl" class="block text-sm font-medium text-gray-700">
-                                    {{ __('How many persons will attend ?') }}
-                                </label>
+                                <div>
+                                    <label for="number_ppl" class="block text-sm font-medium text-gray-700">
+                                        {{ __('How many persons will attend ?') }}
+                                    </label>
 
-                                <input type="number" id="number_ppl" name="number_ppl"
-                                    class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm" />
+                                    <input type="number" id="number_ppl" name="number_ppl"
+                                        class="mt-1 w-full rounded-md border-gray-200 bg-white text-sm text-gray-700 shadow-sm" />
+                                </div>
+
+                                <div>
+                                    <label for="event" class="block text-sm font-medium text-gray-700 mt-5">
+                                        {{ __('For what event ?') }}
+                                    </label>
+
+                                    <select name="cars" id="cars" class="rounded-lg border-gray-200">
+                                        @foreach ($events as $event)
+                                            <option value="{{ $event->name }}">{{ $event->name }}</option>
+                                        @endforeach
+                                    </select>
+
+                                </div>
                             </div>
                             <div class="col-span-6 sm:flex sm:items-center sm:gap-4 justify-center text-center w-full">
                                 <x-primary-button class="text-center w-full justify-center">

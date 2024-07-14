@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Models\Event;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -18,7 +19,9 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/rsvp', function () {
-    return view('rsvp');
+    $events = Event::all();
+
+    return view('rsvp')->with('events', $events);
 })->name('rsvp');
 
 require __DIR__.'/auth.php';
