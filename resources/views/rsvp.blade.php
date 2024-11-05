@@ -20,8 +20,7 @@
         <section class="bg-white">
             <div class="lg:grid lg:min-h-screen lg:grid-cols-12">
                 <aside class="relative block h-16 lg:order-last lg:col-span-5 lg:h-full xl:col-span-6">
-                    <img alt="Wedding Image"
-                        src="https://cdn.dribbble.com/userupload/2409550/file/original-922e918a79f17b3af269e796488bfb54.jpg?resize=1024x1008"
+                    <img alt="Wedding Image" src="{{ asset('images/Michelle&Liviu-156.jpg') }}"
                         class="absolute inset-0 h-full w-full object-cover" />
                 </aside>
 
@@ -80,7 +79,7 @@
 
                                 <div>
                                     <label for="event" class="block text-sm font-medium text-gray-700 mt-5">
-                                        {{ __('For what event ?') }}
+                                        {{ __('For which event ?') }}
                                     </label>
 
                                     <select name="cars" id="cars" class="rounded-lg border-gray-200">

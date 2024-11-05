@@ -15,14 +15,15 @@
 </head>
 
 <body class="antialiased font-sans bg-beige/5 scroll-smooth">
+    <div class="hidden text-center bg-beige text-white  p-4 sm:flex flex-col">
+        <p class="text-5xl">
+            We are getting Married
+        </p>
+        <livewire:countdown />
+    </div>
     <x-welcome-navigation />
-    <div class="sm:h-screen grid sm:grid-cols-4 mx-14 mt-0 gap-10">
-        <div class="hidden sm:absolute top-20 left-0 right-0 text-center bg-beige text-white  p-4 sm:flex flex-col">
-            <p class="text-5xl">
-                We are getting Married
-            </p>
-            <livewire:countdown />
-        </div>
+    <div class="sm:h-screen grid sm:grid-cols-4 mx-10 mt-0 gap-10">
+
         <div class="flex flex-col justify-center text-center text-9xl gap-10 mt-20">
             <p>Save</p>
             <p>The</p>
@@ -30,8 +31,8 @@
         </div>
         <div class="flex flex-col justify-center align-middle divide-x mt-14">
             <div>
-                <img src="https://cdn.dribbble.com/userupload/8800412/file/original-44d326d83b1d37ef8a30fad023bd5b91.jpg?resize=1024x676"
-                    alt="img" class="rounded-lg">
+                <img src="{{ asset('images/Michelle&Liviu-1.jpg') }}" alt="img"
+                    class="rounded-lg opacity-0 animate-fadeInUp">
             </div>
             <p class="m-5 text-center text-2xl flex flex-col ">
                 <span class="text-center  font-light text-beige/90">
@@ -42,8 +43,8 @@
         </div>
         <div class="flex flex-col justify-center align-middle divide-x mt-14">
             <div>
-                <img src="https://cdn.dribbble.com/userupload/8800412/file/original-44d326d83b1d37ef8a30fad023bd5b91.jpg?resize=1024x676"
-                    alt="img" class="rounded-lg">
+                <img src="{{ asset('images/Michelle&Liviu-74.jpg') }}" alt="img"
+                    class="rounded-lg opacity-0 animate-fadeInDown">
             </div>
             <p class="m-5 text-center text-2xl flex flex-col ">
                 <span class="text-center font-light text-beige/90">
@@ -54,8 +55,8 @@
         </div>
         <div class="flex flex-col justify-center align-middle divide-x mt-14">
             <div>
-                <img src="https://cdn.dribbble.com/userupload/8800412/file/original-44d326d83b1d37ef8a30fad023bd5b91.jpg?resize=1024x676"
-                    alt="img" class="rounded-lg">
+                <img src="{{ asset('images/Michelle&Liviu-119.jpg') }}" alt="img"
+                    class="rounded-lg opacity-0 animate-fadeInUp">
             </div>
             <p class="m-5 text-center text-2xl flex flex-col">
                 <span class="text-center font-light text-beige/90">
@@ -75,6 +76,26 @@
         </div>
         <div></div>
     </div>
+    <div id="aboutTheWedding" class="sm:h-screen grid sm:grid-cols-3">
+        <div></div>
+        <div class="flex flex-col gap-5 text-center">
+            <p class="text-7xl">
+                {{ __('ABOUT THE WEDDING') }}
+            </p>
+            <p>bye !</p>
+        </div>
+        <div></div>
+    </div>
+
+    <footer class="bg-gray-50">
+        <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+            <div class="sm:flex sm:items-center justify-center">
+                <p class="mt-4 text-center text-sm text-gray-500 lg:mt-0 lg:text-right">
+                    Copyright &copy; 2025. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
