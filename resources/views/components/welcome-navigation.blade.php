@@ -26,6 +26,22 @@
                         {{ __('RSVP') }}
                     </x-nav-link>
 
+
+                </div>
+
+                <div class="mt-5 ms-96">
+                    <ul class="flex flex-row gap-5 justify-end" aria-labelledby="dropdownMenuButton">
+                        <li>
+                            <a class="dropdown-item" href="{{ route('locale.switch', ['locale' => 'ro']) }}">
+                                <span class="flag-icon flag-icon-ro"></span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="{{ route('locale.switch', ['locale' => 'de']) }}">
+                                <span class="flag-icon flag-icon-de"></span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
@@ -61,7 +77,25 @@
                 {{ __('RSVP') }}
             </x-responsive-nav-link>
 
-
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <span class="flag-icon flag-icon-{{ app()->getLocale() == 'ro' ? 'ro' : 'us' }}"></span>
+                    {{ strtoupper(app()->getLocale()) }}
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <li>
+                        <a class="dropdown-item" href="{{ route('locale.switch', ['locale' => 'ro']) }}">
+                            <span class="flag-icon flag-icon-ro"></span> Romanian
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="{{ route('locale.switch', ['locale' => 'en']) }}">
+                            <span class="flag-icon flag-icon-us"></span> English
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </nav>

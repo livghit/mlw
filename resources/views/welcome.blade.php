@@ -10,6 +10,7 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css">
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
@@ -17,7 +18,7 @@
 <body class="antialiased font-sans bg-beige/5 scroll-smooth">
     <div class="hidden text-center bg-beige text-white  p-4 sm:flex flex-col">
         <p class="text-5xl">
-            We are getting Married
+            {{ __('We are getting Married') }}
         </p>
         <livewire:countdown />
     </div>
@@ -25,7 +26,8 @@
     <div class="sm:h-screen grid sm:grid-cols-4 mx-10 mt-0 gap-10">
 
         <div class="flex flex-col justify-center text-center text-9xl gap-10 mt-20">
-            <p>Save</p>
+            <p>Us</p>
+            <p>And</p>
             <p>The</p>
             <p>Dates</p>
         </div>
@@ -66,25 +68,26 @@
             </p>
         </div>
     </div>
-    <div id="ourStory" class="sm:h-screen grid sm:grid-cols-3">
-        <div></div>
-        <div class="flex flex-col gap-5 text-center">
-            <p class="text-7xl">
-                {{ __('OUR STORY') }}
-            </p>
-            <p>hello</p>
+    <div id="ourStory" class="pt-44">
+        <p class="text-7xl text-center">
+            {{ __('OUR STORY') }}
+        </p>
+        <div>
+            <x-story-card />
         </div>
-        <div></div>
     </div>
-    <div id="aboutTheWedding" class="sm:h-screen grid sm:grid-cols-3">
-        <div></div>
-        <div class="flex flex-col gap-5 text-center">
-            <p class="text-7xl">
-                {{ __('ABOUT THE WEDDING') }}
-            </p>
-            <p>bye !</p>
+    <div id="aboutTheWedding" class="pt-44">
+        <p class="text-7xl text-center">
+            {{ __('ABOUT THE WEDDING') }}
+        </p>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-5 p-10">
+            <x-about-card icon="church" />
+            <x-about-card icon="heart" />
+            <x-about-card icon="cap" />
+            <x-about-card icon="torte" />
+            <x-about-card icon="party" />
         </div>
-        <div></div>
     </div>
 
     <footer class="bg-gray-50">
