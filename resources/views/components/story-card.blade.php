@@ -1,4 +1,4 @@
-<div class="grid grid-cols-2 p-10 sm:px-52 gap-5 sm:gap-0">
+<div class="grid grid-cols-1 sm:grid-cols-2 p-10 sm:px-52 gap-5 sm:gap-0">
     <div class="flex justify-center h-80 sm:h-96">
         <img src="{{ asset('images/Michelle&Liviu-55.jpg') }}" alt="img" class="h-80 sm:h-96 rounded-md" />
     </div>
@@ -15,16 +15,16 @@
                 </svg>
 
 
-                <h2 class="mt-4 text-xl font-medium sm:text-2xl">How we have meet</h2>
+                <h2 class="mt-4 text-xl font-medium sm:text-2xl">{{ __('How we have meet') }}</h2>
             </div>
 
             <div
                 class="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
-                <h3 class="mt-4 text-xl font-medium sm:text-2xl">Go around the world</h3>
+                <h3 class="mt-4 text-xl font-medium sm:text-2xl">{{ __('When it is suppoused to happen it happens') }}
+                </h3>
 
                 <p class="mt-4 text-sm sm:text-base">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, praesentium voluptatem
-                    omnis atque culpa repellendus.
+                    {{ __('how we meet') }}
                 </p>
 
             </div>
