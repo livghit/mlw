@@ -26,8 +26,7 @@
     <div class="sm:h-screen grid sm:grid-cols-4 mx-10 mt-0 gap-10">
 
         <div class="flex flex-col justify-center text-center text-9xl gap-10 mt-20">
-            <p>Us</p>
-            <p>And</p>
+            <p>Us</p> <p>And</p>
             <p>The</p>
             <p>Dates</p>
         </div>
@@ -69,7 +68,7 @@
         </div>
     </div>
     <div id="ourStory" class="pt-44">
-        <p class="text-7xl text-center">
+        <p class="text-6xl md:text-7xl text-center">
             {{ __('OUR STORY') }}
         </p>
         <div>
@@ -77,16 +76,16 @@
         </div>
     </div>
     <div id="aboutTheWedding" class="pt-44">
-        <p class="text-7xl text-center">
+        <p class="text-6xl md:text-7xl text-center">
             {{ __('ABOUT THE WEDDING') }}
         </p>
 
-        <div class="grid grid-cols-2 md:grid-cols-3 gap-5 p-10">
-            <x-about-card icon="church" />
-            <x-about-card icon="heart" />
-            <x-about-card icon="cap" />
-            <x-about-card icon="torte" />
-            <x-about-card icon="party" />
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5 p-10">
+            <x-about-card icon="church" title="Ceremony" text="" />
+            <x-about-card icon="heart"  title="Acompany the Guests" text=""/>
+            <x-about-card icon="cap"  title="IDK" text=""/>
+            <x-about-card icon="torte"  title="Cuting the Cake" text=""/>
+            <x-about-card icon="party"  title="Party Time" text=""/>
         </div>
     </div>
 

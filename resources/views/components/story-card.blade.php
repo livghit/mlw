@@ -19,7 +19,7 @@
             </div>
 
             <div
-                class="absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
+                class="max-h-[20rem] overflow-y-auto absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
                 <h3 class="mt-4 text-xl font-medium sm:text-2xl">{{ __('When it is suppoused to happen it happens') }}
                 </h3>
 
