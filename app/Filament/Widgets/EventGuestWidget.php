@@ -3,6 +3,7 @@
 namespace App\Filament\Widgets;
 
 use App\Models\Event;
+use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Table;
 use Filament\Widgets\StatsOverviewWidget;
 use Filament\Widgets\StatsOverviewWidget\Stat;
@@ -33,5 +34,17 @@ class EventGuestWidget extends StatsOverviewWidget
                 ->description('Total location costs in €')
                 ->icon('heroicon-s-currency-dollar'),
         ];
+    }
+
+    public function table(Table $table): Table
+    {
+        /** @var Event $event */
+        $event = Event::find(1);
+
+        return $table
+            ->query($event->guests()->getQuery())
+            ->columns([
+                TextColumn::make('first_name'),
+            ]);
     }
 }
