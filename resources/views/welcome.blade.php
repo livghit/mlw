@@ -26,7 +26,8 @@
     <div class="sm:h-screen grid sm:grid-cols-4 mx-10 mt-0 gap-10">
 
         <div class="flex flex-col justify-center text-center text-9xl gap-10 mt-20">
-            <p>Us</p> <p>And</p>
+            <p>Us</p>
+            <p>And</p>
             <p>The</p>
             <p>Dates</p>
         </div>
@@ -81,11 +82,15 @@
         </p>
 
         <div class="grid grid-cols-1 md:grid-cols-3 gap-5 p-10">
-            <x-about-card icon="church" title="Ceremony" text="" />
-            <x-about-card icon="heart"  title="Acompany the Guests" text=""/>
-            <x-about-card icon="cap"  title="IDK" text=""/>
-            <x-about-card icon="torte"  title="Cuting the Cake" text=""/>
-            <x-about-card icon="party"  title="Party Time" text=""/>
+            <x-about-card icon="church" title="{{ __('Ceremony') }}" text="" />
+            <x-about-card icon="drink" title="{{ __('Acompany the Guests') }}" text="" />
+            <x-about-card icon="heart" title="{{ __('First Pictures') }}" text="" />
+            <x-about-card icon="people" title="{{ __('Guest finding place') }}" text="" />
+            <x-about-card icon="games" title="{{ __('Games') }}" text="" />
+            <x-about-card icon="dinner" title="{{ __('Dinner') }}" text="" />
+            <x-about-card icon="dance" title="{{ __('Dance') }}" text="" />
+            <x-about-card icon="torte" title="{{ __('Cuting the Cake') }}" text="" />
+            <x-about-card icon="party" title="{{ __('Party Time') }}" text="" />
         </div>
     </div>
 
