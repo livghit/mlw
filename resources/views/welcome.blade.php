@@ -62,7 +62,7 @@
             </div>
             <p class="m-5 text-center text-2xl flex flex-col">
                 <span class="text-center font-light text-beige/90">
-                    25.05.2025
+                    25.07.2025
                 </span>
                 {{ __('THE DAY WE MARRY') }}
             </p>
