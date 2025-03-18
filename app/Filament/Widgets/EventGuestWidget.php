@@ -26,8 +26,6 @@ class EventGuestWidget extends StatsOverviewWidget
     protected function getStats(): array
     {
         return [
-            Stat::make('Guests at '.Event::find(1)->name, $this->getTotalGuestsForEvent(Event::find(1)))
-                ->description('Guests that accepted the event'),
             Stat::make('Guests at '.Event::find(2)->name, $this->getTotalGuestsForEvent(Event::find(2)))
                 ->description('Guests that accepted the event'),
             Stat::make('Event Location Costs', \Illuminate\Support\Number::currency($this->getTotalGuestsForEvent(Event::find(2)) * 150, 'EUR'))
