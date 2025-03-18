@@ -20,6 +20,7 @@ class EventGuestsOverview extends BaseWidget
                 TextColumn::make('first_name'),
                 TextColumn::make('second_name'),
                 TextColumn::make('email')->searchable(),
+                TextColumn::make('persons'),
             ]);
 
     }
