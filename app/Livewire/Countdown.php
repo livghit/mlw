@@ -37,6 +37,7 @@ class Countdown extends Component
         $this->hours = $diff->h;
         $this->minutes = $diff->i;
         $this->seconds = $diff->s;
+
         return view('livewire.countdown');
     }
 }

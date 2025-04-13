@@ -131,7 +131,17 @@
 
                 <span class="hidden sm:block sm:h-px sm:w-8 sm:bg-beige"></span>
 
+                        <div
+  class="group relative inline-block text-sm font-medium text-red-600 focus:ring-3 focus:outline-hidden"
+  href="#"
+>
+  <span class="absolute inset-0 border border-current"></span>
+  <span
+    class="block border border-current bg-white px-12 py-3 transition-transform group-hover:-translate-x-1 group-hover:-translate-y-1"
+  >
                 <p class="mt-0.5 opacity-50 sm:mt-0">Anfragen</p>
+  </span>
+</div>
             </div>
         </a>
     </div>
@@ -185,7 +195,7 @@
 
                 <div
                     class="max-h-[20rem] overflow-y-auto absolute p-4 opacity-0 transition-opacity group-hover:relative group-hover:opacity-100 sm:p-6 lg:p-8">
-                    <h3 class="mt-4 text-xl font-medium sm:text-2xl">{{ __('When it is suppoused to happen it happens') }}
+                    <h3 class="mt-4 text-xl font-medium sm:text-2xl">{{ __('Presents') }}
                     </h3>
 
                     <p class="mt-4 text-sm sm:text-base">

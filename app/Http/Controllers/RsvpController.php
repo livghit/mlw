@@ -19,7 +19,7 @@ class RsvpController extends Controller
         ]);
         $event = Event::find($validated['event']);
 
-        /**@var $guest EventGuest */
+        /** @var $guest EventGuest */
         $guest = EventGuest::firstOrNew(
             ['email' => $validated['email']],
         );

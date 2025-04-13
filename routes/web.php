@@ -28,11 +28,10 @@ Route::get('/rsvp', function () {
 
 Route::post('/rsvp-accept', [RsvpController::class, 'store'])->name('rsvp.accept');
 
-
 Route::get('locale/{locale}', function ($locale) {
     session(['locale' => $locale]);
 
     return redirect()->back();
 })->name('locale.switch');
 
-require __DIR__ . '/auth.php';
+require __DIR__.'/auth.php';
