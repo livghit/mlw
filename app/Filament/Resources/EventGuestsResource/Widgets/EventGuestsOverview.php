@@ -9,6 +9,8 @@ use Filament\Widgets\TableWidget as BaseWidget;
 
 class EventGuestsOverview extends BaseWidget
 {
+    protected int|string|array $columnSpan = 'full';
+
     public function table(Table $table): Table
     {
         /** @var Event $event */
